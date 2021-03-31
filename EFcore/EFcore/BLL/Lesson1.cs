@@ -22,10 +22,10 @@ namespace EFcore.BLL
         public string ProductName { get; set; }
         public int Quantity { get; set; }
     }
-    public class Lession1
+    public class Lesson1
     {
         private BikeStoreDbContext context;
-        public Lession1(BikeStoreDbContext _context) => this.context = _context;
+        public Lesson1(BikeStoreDbContext _context) => this.context = _context;
         public void ShowCustomers()
         {
             var table = context.Customers.Join(context.Orders, customer => customer.customer_id, order => order.customer_id,
