@@ -1,4 +1,5 @@
-﻿/*Tất cả customers, sắp xếp theo thứ tự số lượng order họ mua từ cao đến thấp.*/
+﻿Use BikeStore
+/*Tất cả customers, sắp xếp theo thứ tự số lượng order họ mua từ cao đến thấp.*/
 select distinct customer.first_name, customer.last_name, 
 	sum(items.quantity) over (Partition by customer.customer_id) as QuantityOrders 
 	from sales.customers as customer
