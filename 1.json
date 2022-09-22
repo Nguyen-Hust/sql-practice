@@ -1,0 +1,16 @@
+{
+    "name": "demo image",
+    "description": "Genesis card",
+    "image_url": "https://raw.githubusercontent.com/Nguyen-Hust/sql-practice/master/1.jpg",
+    "attributes": [
+        {
+            "trait_type": "class",
+            "value": "genesis"
+        },
+        {
+            "display_type": "date",
+            "trait_type": "birthday",
+            "value": 1624955102
+        }
+    ]
+}
